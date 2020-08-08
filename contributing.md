@@ -4,7 +4,7 @@ ___
 
 1. Fork the repo
 2. Clone the forked repo to your local machine
-3. On your local machine inside the cloned repo, add the original repository as a remote called upstream(git remote add upstream https://github.com/<<our repository>>)
+3. On your local machine inside the cloned repo, add the original repository as a remote called upstream(git remote add upstream <<our repository>>)
 4. Create and checkout to a new branch to work ( `git checkout -b ft-chimdia`)
 5. Implement your feature on the branch you created
 6. After you have implemented your feature, run the following in gitbash or terminal
