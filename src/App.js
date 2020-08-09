@@ -1,18 +1,17 @@
 import React from 'react';
-import './App.css';
+import NavBar from './components/nav-bar/nav-bar.component';
+import LandingBanner from './components/landing-banner/landing-banner.component';
+import InfoCallout from './components/info-callout/info-callout.component';
 import Pricing from './components/pages/pricing/pricing'
-
 function App() {
-  return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <h1>MOVIEHUB</h1>
-    //   </header>
-    // </div>
-    <div>
-      <Pricing/>
-    </div>
-  );
+    return (
+      <div>
+        <NavBar/>
+        <LandingBanner/>
+        <InfoCallout/>
+        <Pricing/>
+      </div>
+    );
 }
 
 export default App;
