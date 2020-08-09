@@ -1,9 +1,15 @@
 import React from 'react';
-import './App.css';
+import NavBar from './components/nav-bar/nav-bar.component';
+import LandingBanner from './components/landing-banner/landing-banner.component';
+import InfoCallout from './components/info-callout/info-callout.component';
 
 function App() {
     return (
-      <div></div>
+      <div>
+        <NavBar/>
+        <LandingBanner/>
+        <InfoCallout/>
+      </div>
     );
 }
 
