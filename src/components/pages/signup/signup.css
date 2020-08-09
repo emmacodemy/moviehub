@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.form-group {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  text-align: left;
+}
+a:link {
+  color: red;
+}
