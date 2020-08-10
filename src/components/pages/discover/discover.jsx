@@ -1,12 +1,18 @@
 import React from 'react';
+import './discover.scss';
 import Nav from '../../nav/nav.component';
+import MovieSection from '../../movie-section';
 
 const Discover = () => {
     return ( 
-        <div classname="discover">
+        <div className="discover">
             <Nav/>
-            <div classname='hero'>
+            <div className='hero'>
 
+            </div>
+            <div>
+                <MovieSection title="Movies"/>
+                <MovieSection title="Series"/>
             </div>
         </div>
      );
