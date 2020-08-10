@@ -8,7 +8,7 @@ function Signup() {
       <Nav />
       <div className='sign-up-body'>
         <div
-          class="container text-center"
+          class="signupcontainer text-center"
           style={{  }}
         >
           <h1>Sign Up</h1>
