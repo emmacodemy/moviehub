@@ -3,9 +3,6 @@ import "./info-callout.styles.scss"
 import LaptopImg from "../../assets/images/laptop.jpg"
 import Tv from "../../assets/images/tv.jpg"
 import Phone from "../../assets/images/phone.jpg"
-
-
-
 const InfoCallout = () => {
     return (
         <div className="info-container">
