@@ -1,0 +1,21 @@
+.header{
+    position: fixed;
+    height:10vh;
+    width: 100%;
+    border-bottom: 1px solid red;
+    margin-bottom: 29em;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 3em;
+    font-family: 'Raleway', sans-serif;
+    .link{
+        text-decoration: none;
+        color: rgb(253, 0, 0);
+    }
+}

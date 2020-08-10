@@ -9,9 +9,9 @@ const NavBar = () => {
                 <h1>MOVIEHUB</h1>
             </div>
             <ul className="nav-links">
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="dd">Discover</a></li>
+                <li><a href="ddd">Pricing</a></li>
+                <li><a href="ddd">Sign In</a></li>
             </ul>
         </nav>
     );
