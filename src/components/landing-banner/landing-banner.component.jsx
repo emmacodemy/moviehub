@@ -1,6 +1,6 @@
 import React from 'react';
 import "./landing-banner.styles.scss"
-import BannerImg from "../../assets/images/banner-img2.jpg"
+import BannerImg from "../../assets/images/banner-img4.jpg"
 
 const LandingBanner = () => {
     return (
