@@ -1,5 +1,5 @@
 @mixin transition-ease{
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 $primary-color: #272727;
 $secondary-color: #ff652f;
@@ -23,7 +23,7 @@ $secondary-color: #ff652f;
     list-style-type: none;
     margin-bottom:0px;
     &__link{
-        font-size: 16px;
+        font-size: 18px;
         text-decoration: none;
         list-style-type: none;
         padding: 2rem 0;
@@ -35,6 +35,7 @@ $secondary-color: #ff652f;
             display: none;
         }
         &:hover{
+            text-decoration: none;
             color: $secondary-color;
         }
     }
