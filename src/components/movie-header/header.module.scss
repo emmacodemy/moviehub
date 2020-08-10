@@ -1,0 +1,30 @@
+
+.Header{
+    max-width: 95%;
+    margin: 1rem auto 2rem;
+
+    & hr{
+        background: #FFF;
+        margin: 1rem auto 2rem;
+    }
+
+    & h6{
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+            color: #DB202C;
+            text-decoration: underline;
+        }
+
+        &.active{
+            color: #DB202C;
+
+            &:hover{
+                color: #FFF;
+                text-decoration: underline;
+            }
+        }
+    }
+}

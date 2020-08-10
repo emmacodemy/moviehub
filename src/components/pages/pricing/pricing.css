@@ -1,0 +1,96 @@
+
+.pricing-background {
+    background-color: #000000;
+    height: auto;
+}
+.pricing-header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.pricing-box {
+    background: #FFFFFF;
+    border-radius: 5px;
+    height: 470px;
+}
+
+@media(max-width:1200px) {
+    .pricing-box {
+        background: #FFFFFF;
+        border-radius: 5px;
+        height: 500px;
+    }
+}
+
+.pricing-alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sinzu-border {
+    width: 150px;
+    border-bottom: 3px solid #FF0000;
+}
+
+.spending-border {
+    width: 132px;
+    border-bottom: 3px solid #2400FF;
+}
+
+.jacuzzi-border {
+    width: 132px;
+    border-bottom: 3px solid #00FF19;
+}
+
+.spending {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.price-duration {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #565656;
+}
+
+.policy-paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #636363;
+}
+
+.select-plan-button {
+    width: 410px;
+    height: 57px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:500px) {
+
+    .select-plan-button {
+        width: 310px;
+        height: 57px;
+        background: #FF0000;
+        color: #ffffff;
+        border-radius: 3px;
+    }
+}
