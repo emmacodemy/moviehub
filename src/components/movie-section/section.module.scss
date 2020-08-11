@@ -1,5 +1,8 @@
 
 .Section{
     max-width: 100%;
-    margin: 5rem auto;
+    margin:  3rem;
+    @media screen and (max-width:650px){
+        margin: 0px;
+    }
 }

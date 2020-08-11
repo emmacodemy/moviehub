@@ -8,7 +8,9 @@
         margin: auto 0 0.5rem;
         background-color: #fff;
     }
-
+    & .title{
+        text-align: left;
+    }
     & .flexbox{
         display: flex;
         justify-content: space-between;
