@@ -1,10 +1,10 @@
 import React from "react";
 
-import Nav from "../../nav/nav.component";
+import Nav from "../../components/nav/nav.component";
 import "./movie-details.styles.scss";
-import { ReactComponent as PlayIcon } from "../../../assets/images/play3.svg";
+import { ReactComponent as PlayIcon } from "../../assets/images/play3.svg";
 
-import MovieImage from "../../../assets/images/ussama-azam-Pb_QtB442h4-unsplash.jpg";
+import MovieImage from "../../assets/images/ussama-azam-Pb_QtB442h4-unsplash.jpg";
 
 class MovieDetails extends React.Component {
   render() {
