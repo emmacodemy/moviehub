@@ -23,7 +23,7 @@
     & .flexbox{
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
 
         & i{
             color: gold;
@@ -31,6 +31,7 @@
             padding: 2px;
         }
     }
+    
 }
 
 @media(max-width: 900px){
@@ -48,8 +49,11 @@
 
         & .year{
             font-size: 0.7rem;
+            margin-bottom:0rem!important;
         }
-
+        p{
+            margin-bottom:0rem!important;
+        }
         & .flexbox {
 
             & i {
