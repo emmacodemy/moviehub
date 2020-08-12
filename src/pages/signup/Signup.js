@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './signup.css';
-import Nav from '../../nav/nav.component';
+import Nav from '../../components/nav/nav.component';
 
 function Signup() {
   return (
@@ -37,7 +38,7 @@ function Signup() {
               Sign Up
             </button>
             <p style={{ color: '#808584' }}>
-              already have an account? <a href={'#'}>Sign in</a> instead
+              already have an account? <Link to="/signin">Sign in</Link> instead
             </p>
           </form>
         </div>

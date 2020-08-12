@@ -2,6 +2,7 @@
   "name": "moviehub",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -34,7 +35,11 @@
     ]
   },
   "devDependencies": {
+    "axios": "^0.19.2",
     "react-elastic-carousel": "^0.7.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "styled-components": "^5.1.1"
   }
 }
