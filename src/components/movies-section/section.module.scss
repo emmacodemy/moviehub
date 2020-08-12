@@ -1,0 +1,22 @@
+
+.Section{
+    max-width: 100%;
+    margin: 3rem auto 0;
+
+    & .error{
+        text-align: center;
+        color: red;
+    }
+
+    @media screen and (max-width:650px){
+        .Section{
+            margin: 0;
+
+            & .error {
+                text-align: center;
+                color: red;
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './pricing.css';
-import Nav from '../../nav/nav.component';
+import Nav from '../../components/nav/nav.component';
 
 function Pricing() {
     return (
