@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import styles from "../movies-section/section.module.scss";
 import Carousel from "react-elastic-carousel";
-import SeriesHeader from "../series-header";
-import Movie from "../movie";
+import SeriesHeader from "../series-header/series-header";
+import Movie from "../movie/movie";
 import { fetchTrendingSeries } from "../../redux/actions";
+import { Link } from 'react-router-dom';
 
 class MovieSection extends Component {
   breakPoints = [
@@ -27,13 +28,19 @@ class MovieSection extends Component {
         <Carousel breakPoints={this.breakPoints}>
           {results.map((movie) => {
             return (
-              <Movie
+              <Link
                 key={movie.id}
-                title={movie.original_name}
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                rating={movie.vote_average}
-                date={movie.first_air_date}
-              />
+                style={{ textDecoration: 'none', color: 'white' }}
+                to={`view/tv/${movie.id}`}
+              >
+                <Movie
+                  movie={movie}
+                  title={movie.original_name}
+                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                  rating={movie.vote_average}
+                  date={movie.first_air_date.substring(0, 4)}
+                />
+              </Link>
             );
           })}
         </Carousel>
