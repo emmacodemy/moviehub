@@ -1,13 +1,34 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import Nav from "../../components/nav/nav.component";
+import Loader from "../../components/loader/loader";
 import "./movie-details.styles.scss";
 import { ReactComponent as PlayIcon } from "../../assets/images/play3.svg";
+import { fetchMovieDetails } from "../../redux/actions";
 
 import MovieImage from "../../assets/images/ussama-azam-Pb_QtB442h4-unsplash.jpg";
 
 class MovieDetails extends React.Component {
+  componentDidMount() {
+    const { dispatch, match } = this.props;
+    const id = match.params.id;
+    fetchMovieDetails(id)(dispatch);
+  }
+
   render() {
+    const movieInfo = this.props.movieInfo;
+    if (!movieInfo) {
+      return (
+        <div>
+          <Nav />
+          <div className="movie">
+            <Loader />
+          </div>
+        </div>
+      );
+    }
+    let { genres, title, overview, imageUrl } = movieInfo;
     return (
       <div>
         <Nav />
@@ -18,30 +39,23 @@ class MovieDetails extends React.Component {
                 <PlayIcon className="movie__play-icon" /> Play
               </button>
             </div>
-
             <img
-              src={MovieImage}
+              src={imageUrl}
               alt={`cover for movie title`}
               className="movie__img"
             />
           </div>
           <div className="movie-details">
-            <h2 className="movie__title">Avengers End Game</h2>
+            <h2 className="movie__title">{title}</h2>
             <div className="split-column">
-              <p className="movie__overview">
-                The grave course of events set in motion by Thanos that wiped
-                out half the universe and fractured the Avengers ranks compels
-                the remaining Avengers to take one final stand in Marvel
-                Studios' grand conclusion to twenty-two films, "Avengers:
-                Endgame.
-              </p>
+              <p className="movie__overview">{overview}</p>
               <div>
                 <p className="movie__cast">
                   <span>Starring:</span> Robert Downey Jr., Chris Evans,
                   Scarlett Johansson, Chris Hemsworth
                 </p>
                 <p className="movie__genres">
-                  <span>Genres:</span> Crime, Fantasy, Adventure, Life Comics
+                  <span>Genres:</span> {genres}
                 </p>
               </div>
             </div>
@@ -52,4 +66,8 @@ class MovieDetails extends React.Component {
   }
 }
 
-export default MovieDetails;
+const mapStateToProps = (state) => ({
+  movieInfo: state.movies,
+});
+
+export default connect(mapStateToProps)(MovieDetails);

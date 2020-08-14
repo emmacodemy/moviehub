@@ -3,6 +3,8 @@
   overflow: hidden;
   display: flex;
   margin-top: 10vh;
+  background-color: black;
+  position: relative;
 
   @media screen and (max-width: 1200px) {
     flex-direction: column;
@@ -80,7 +82,7 @@
   }
 
   &-details {
-    flex: 0 1 45%;
+    flex: 0 1 50%;
     background-color: black;
     color: white;
     padding: 50px;
